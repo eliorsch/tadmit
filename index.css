@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Freehand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+*{box-sizing: border-box; margin: 0px;}
+/* body {background-color: #C0CBCD;} */
+body {
+    background-image: url(https://wallpaper.dog/large/20474159.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;}
+#header {height: 5em; background-color: #FC9303; display: flex; justify-content: space-between; background-image: linear-gradient(to right bottom, #7DC23B, #FC9303);}
+/* * {border: 1px solid black;} */
+#title {text-align: center; vertical-align: top; line-height: 1; display: flex; flex-direction: column; justify-content: center;}
+#logo  {height: 100%;}
+#logoimg {height: 100%;}
+h1 {
+    font-family: 'Carter One', cursive;
+    font-size: 3em;
+    color: #017EF4;
+    font-weight: bold;
+    text-shadow: -8px -7px 7px #d74c10;
+}
+h3 {
+    font-family: 'Yellowtail', cursive;
+    font-size: 1.5em;
+    color: blue;
+    font-style: italic;
+    font-weight: 400;
+}
+#links {vertical-align: top; padding: 10px; margin: 10px; border-radius: 10%; border: #D74C10 solid 2px; border-radius: 20%;     line-height: 1;
+}
+#links a {
+    font-family: 'Freehand', cursive;
+    font-size: 1.5em;
+    color: rgb(239, 102, 4);
+    font-weight: bold;
+}
+#content {height: auto; margin-top: 10px;display: flex; flex-wrap: wrap;}
+#rightcon {width: 50%;height: 350px; text-align: justify; text-indent: 50px; word-spacing: 5px; line-height: 1.5; overflow-y: scroll; padding: 10px; color: white ; letter-spacing: 0.5px; ;}
+.highlight  {color:#7DC23B; vertical-align: text-bottom;}
+#leftcon {width: 50%;height: 100%; vertical-align: top;display: flex; flex-wrap: wrap;}
+#leftcon div {width: 50%; height: 100%; text-align: center; margin: 10px 0px; color: white; letter-spacing: 0.5px;}
+/* #leftcon img {width: 100%; padding: 10px;} */
+/* .img-size2 {height: 300px; width: auto;} */
+.img-size2 {
+    width: 95%;
+    object-fit: contain;
+    height: 50vh;}
+
+#footer {display: flex;  width: 100%; justify-content: center; background-color: #7DC23B; text-align: center; line-height: 3;}
+#footer img {display: inline-block; height: 20px; margin: 10px;}
+#footer a {width: auto;height: auto; }
+#footer * {vertical-align: middle;}
+
+@media (max-width: 786px) {
+    #rightcon, #leftcon {width: 100%;}
+    #leftcon div {width: 100%; margin-top: 5vh;}
+    h1 {font-size: 1.5em;}
+    h3{font-size: 1.2em;}
+    #footer {flex-direction: column;}
+    
+}
